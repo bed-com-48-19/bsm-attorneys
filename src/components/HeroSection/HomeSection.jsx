@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import services from "../../assets/data/service";
 import heroImg01 from "../../assets/images/hammer.jpg";
 import Img02 from "../../assets/images/ff.jpg";
