@@ -1,4 +1,5 @@
 import React from "react";
+import { FiMapPin, FiPhone, FiMail, FiUser, FiSend } from 'react-icons/fi';
 
 const ContactUs = () => {
   return (
@@ -13,8 +14,8 @@ const ContactUs = () => {
           <div className="w-full lg:w-1/2 px-6 mb-12 lg:mb-0">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-headingColor mb-4">
-                  Lilongwe Office
+                <h3 className="text-2xl font-semibold text-headingColor mb-4 flex items-center">
+                  <FiMapPin className="mr-3 text-primaryColor" /> Lilongwe Office
                 </h3>
                 <p className="text-lg text-textColor mb-2">
                   La Rose House, First Floor
@@ -26,9 +27,11 @@ const ContactUs = () => {
                   Post Office Box 2177, Lilongwe
                 </p>
                 <p className="text-lg text-textColor mb-2">MALAWI</p>
-                <p className="text-lg text-textColor mb-2">Cell: +265 999 014 717</p>
-                <p className="text-lg text-textColor mb-2">
-                  Email:{" "}
+                <p className="text-lg text-textColor mb-2 flex items-center">
+                  <FiPhone className="mr-2 text-primaryColor" /> +265 999 014 717
+                </p>
+                <p className="text-lg text-textColor mb-2 flex items-center">
+                  <FiMail className="mr-2 text-primaryColor" />
                   <a href="mailto:bsmlawconsultants@gmail.com" className="text-primaryColor">
                     bsmlawconsultants@gmail.com
                   </a>
@@ -41,8 +44,8 @@ const ContactUs = () => {
           <div className="w-full lg:w-1/2 px-6">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-headingColor mb-4">
-                  Blantyre Office
+                <h3 className="text-2xl font-semibold text-headingColor mb-4 flex items-center">
+                  <FiMapPin className="mr-3 text-primaryColor" /> Blantyre Office
                 </h3>
                 <p className="text-lg text-textColor mb-2">
                   Pearl Arcade, First Floor
@@ -54,9 +57,11 @@ const ContactUs = () => {
                   P.O. Box 51935, Limbe, Blantyre
                 </p>
                 <p className="text-lg text-textColor mb-2">MALAWI</p>
-                <p className="text-lg text-textColor mb-2">Cell: +265 994 004398</p>
-                <p className="text-lg text-textColor mb-2">
-                  Email:{" "}
+                <p className="text-lg text-textColor mb-2 flex items-center">
+                  <FiPhone className="mr-2 text-primaryColor" /> +265 994 004398
+                </p>
+                <p className="text-lg text-textColor mb-2 flex items-center">
+                  <FiMail className="mr-2 text-primaryColor" />
                   <a href="mailto:ccmaulidi@gmail.com" className="text-primaryColor">
                     ccmaulidi@gmail.com
                   </a>
@@ -71,8 +76,8 @@ const ContactUs = () => {
           <div className="w-full lg:w-1/2 px-6 mb-12 lg:mb-0">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-headingColor mb-4">
-                  Find Us
+                <h3 className="text-2xl font-semibold text-headingColor mb-4 flex items-center">
+                  <FiMapPin className="mr-3 text-primaryColor" /> Find Us
                 </h3>
                 <div className="map-container">
                   <iframe
@@ -92,52 +97,60 @@ const ContactUs = () => {
           <div className="w-full lg:w-1/2 px-6">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-headingColor mb-4">
-                  Get In Touch
+                <h3 className="text-2xl font-semibold text-headingColor mb-4 flex items-center">
+                  <FiMail className="mr-3 text-primaryColor" /> Get In Touch
                 </h3>
                 <form>
                   <div className="mb-4">
                     <label className="block text-lg text-textColor mb-2" htmlFor="name">
                       Name
                     </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full px-4 py-2 border rounded-lg text-lg"
-                      required
-                    />
+                    <div className="flex items-center border rounded-lg overflow-hidden">
+                      <FiUser className="p-3 text-primaryColor" size={24} />
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="w-full px-4 py-2 text-lg"
+                        required
+                      />
+                    </div>
                   </div>
                   <div className="mb-4">
                     <label className="block text-lg text-textColor mb-2" htmlFor="email">
                       Email
                     </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full px-4 py-2 border rounded-lg text-lg"
-                      required
-                    />
+                    <div className="flex items-center border rounded-lg overflow-hidden">
+                      <FiMail className="p-3 text-primaryColor" size={24} />
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="w-full px-4 py-2 text-lg"
+                        required
+                      />
+                    </div>
                   </div>
                   <div className="mb-4">
                     <label className="block text-lg text-textColor mb-2" htmlFor="message">
                       Message
                     </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      className="w-full px-4 py-2 border rounded-lg text-lg"
-                      required
-                    ></textarea>
+                    <div className="flex items-center border rounded-lg overflow-hidden">
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        className="w-full px-4 py-2 text-lg"
+                        required
+                      ></textarea>
+                    </div>
                   </div>
                   <div>
                     <button
                       type="submit"
-                      className="w-full bg-primaryColor text-white py-2 px-4 rounded-lg text-lg font-semibold"
+                      className="w-full bg-primaryColor text-white py-2 px-4 rounded-lg text-lg font-semibold flex items-center justify-center"
                     >
-                      Send Message
+                      <FiSend className="mr-2" /> Send Message
                     </button>
                   </div>
                 </form>
