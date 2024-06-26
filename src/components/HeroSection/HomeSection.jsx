@@ -1,10 +1,11 @@
 import { useState } from "react";
 import services from "../../assets/data/service";
 import heroImg01 from "../../assets/images/hammer.jpg";
-import Img02 from "../../assets/images/ff.jpg";
 import Img03 from "../../assets/images/law2.jpg";
 import avatar from "../../assets/images/avatar.png";
 import ServiceModal from "../Service/ServiceModal";
+import { Link } from "react-router-dom";
+import { FiUser, FiBriefcase, FiArrowRight } from 'react-icons/fi';
 
 const HeroSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -28,7 +29,9 @@ const HeroSection = () => {
   return (
     <>
       {/*=============================== hero section ================*/}
-      <section className="hero__section pt-24 2xl:h-96"> {/* Increased top padding */}
+      <section className="hero__section pt-24 2xl:h-96">
+        {" "}
+        {/* Increased top padding */}
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-12 items-center justify-between">
             <div className="lg:w-1/2">
@@ -117,71 +120,60 @@ const HeroSection = () => {
 
       {/*=============================== Team section start ================*/}
       <section id="contact" className="team-section py-12 bg-gray-50">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center">
+          Our Team
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Team Member 1 */}
-          <div className="team-member bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center">
-            <div className="w-full md:w-[300px] h-[225px] md:h-full md:flex-shrink-0">
+          <div className="team-member bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6">
+            <div className="w-full md:w-1/3 h-[225px] md:h-full flex-shrink-0">
               <img
-                src={Img02}
+                src={Img03}
                 alt="Mr. Bonwell Mlenga"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-headingColor mb-2">
+            <div className="p-6 md:p-4 flex-grow">
+              <h3 className="text-2xl font-bold text-headingColor mb-2 flex items-center">
+                <FiUser className="mr-2 text-indigo-600" />
                 Managing Partner - Mr. Bonwell Mlenga
               </h3>
-              <p className="text-lg text-textColor mb-4">
-                Mr. Bonwell Mlenga was admitted to the bar on 14th April, 2016.
-                Before founding BSM Attorneys, he gained valuable experience at
-                Chizumila Msiska & Company and later at the Ministry of Justice
-                and Constitutional Affairs, where he served as a Senior State
-                Advocate and Principal State Advocate. His practice spans
-                various areas of law, with notable involvement representing
-                ministries and government institutions such as the Malawi Police
-                Service, Malawi Defence Force, and others.
-              </p>
-              <a
-                href="link_to_full_profile_1"
-                className="btn bg-primaryColor py-2 px-4 rounded-full text-white font-semibold inline-block"
+              <Link
+                to="/profile"
+                className="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition duration-300 flex items-center"
               >
-                View Full Profile
-              </a>
+                View Full Profile <FiArrowRight className="ml-2" />
+              </Link>
             </div>
           </div>
 
           {/* Team Member 2 */}
-          <div className="team-member bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center mt-8 md:mt-0">
-            <div className="w-full md:w-[300px] h-[225px] md:h-full md:flex-shrink-0">
+          <div className="team-member bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6">
+            <div className="w-full md:w-1/3 h-[225px] md:h-full flex-shrink-0">
               <img
                 src={Img03}
                 alt="Mr. Clement Maulidi"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-headingColor mb-2">
+            <div className="p-6 md:p-4 flex-grow">
+              <h3 className="text-2xl font-bold text-headingColor mb-2 flex items-center">
+                <FiBriefcase className="mr-2 text-indigo-600" />
                 Partner - Mr. Clement Maulidi
               </h3>
-              <p className="text-lg text-textColor mb-4">
-                Mr. Clement Maulidi was admitted to the bar on 18th May, 2017.
-                Prior to joining BSM Attorneys, he served in various capacities
-                at the Ministry of Justice and Constitutional Affairs, including
-                as a Senior State Advocate and Principal State Advocate. His
-                extensive experience includes handling legal matters for
-                ministries and government bodies such as the Malawi Police
-                Service, Malawi Defence Force, and more.
-              </p>
-              <a
-                href="link_to_full_profile_2"
-                className="btn bg-primaryColor py-2 px-4 rounded-full text-white font-semibold inline-block"
+              <Link
+                to="/profile"
+                className="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition duration-300 flex items-center"
               >
-                View Full Profile
-              </a>
+                View Full Profile <FiArrowRight className="ml-2" />
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
       {/*=============================== Team section end ================*/}
 
       {/* Testimonials Section (Example of additional content) */}
@@ -224,9 +216,9 @@ const HeroSection = () => {
                 <p className="text-lg text-textColor mb-4">
                   I am incredibly impressed with the level of professionalism
                   and commitment displayed by BSM Attorneys. Their meticulous
-                  approach to our case, coupled with their clear and
-                  transparent communication, made the entire process seamless
-                  and stress-free. It's a pleasure to work with such a dedicated
+                  approach to our case, coupled with their clear and transparent
+                  communication, made the entire process seamless and
+                  stress-free. Its a pleasure to work with such a dedicated
                   team.
                 </p>
                 <div className="flex items-center">

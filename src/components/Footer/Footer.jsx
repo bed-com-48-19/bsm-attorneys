@@ -26,26 +26,26 @@ const quickLinks = [
     title: "Quick Links",
     links: [
       { path: "/home", display: "Home" },
-      { path: "/aboutus", display: "About Us" },
+      { path: "/about", display: "About Us" },
       { path: "/services", display: "Services" },
-      { path: "/lawyers", display: "Team" },
-      { path: "/login", display: "Book Appointment" },
-      { path: "/", display: "Search Location" },
+      { path: "/profile", display: "Team" },
+      { path: "/profile", display: "Book Appointment" },
+      { path: "/contact", display: "Search Location" },
       { path: "/contact", display: "Contact Us" },
     ],
   },
   {
     title: "I want to",
     links: [
-      { path: "/", display: "Donate" },
-      { path: "/privacy", display: "Privacy Policy" },
+      { path: "/profile", display: "Book Appointment" },
+      { path: "/contact", display: "Search Location" },
       { path: "/terms", display: "Terms of Service" },
     ],
   },
   {
     title: "Support Us",
     links: [
-      { path: "/donate", display: "Donate" },
+      { path: "/contact", display: "Donate" },
       { path: "/volunteer", display: "Volunteer" },
     ],
   },

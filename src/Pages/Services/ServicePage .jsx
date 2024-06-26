@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { FiBriefcase, FiUsers, FiDatabase, FiLayers } from 'react-icons/fi'; // Import icons from react-icons
-import ServiceModal from '../../components/Service/ServiceModal'; // Assuming ServiceModal component is defined
-import services from '../../assets/data/service'; // Importing mock data
+import { useState } from 'react';
+import { FiBriefcase, FiUsers, FiDatabase, FiLayers } from 'react-icons/fi'; 
+import ServiceModal from '../../components/Service/ServiceModal'; 
+import services from '../../assets/data/service'; 
 
 const ServicePage = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState(null); // State to hold selected service
+  const [selectedService, setSelectedService] = useState(null);
 
   // Function to open modal and set selected service
   const openModal = (service) => {

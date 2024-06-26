@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import WhoWeAreImage from "../../assets/images/client1.jpg"; // Adjust the path to your image
-import OurValuesImage from "../../assets/images/h2.jpg"; // Adjust the path to your image
+import WhoWeAreImage from "../../assets/images/client1.jpg";
+import OurValuesImage from "../../assets/images/h2.jpg"; 
 import { FiCheckCircle, FiDollarSign, FiUsers, FiTrendingUp, FiShield } from 'react-icons/fi';
 
 const AboutUs = () => {
@@ -97,7 +96,7 @@ const AboutUs = () => {
                 BSM Attorneys.
               </p>
               <Link
-                to="/profile/bonwell-mlenga"
+                to="/profile"
                 className="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition duration-300"
               >
                 View Full Profile
@@ -114,7 +113,7 @@ const AboutUs = () => {
                 worked for the Ministry of Justice and now BSM Attorneys.
               </p>
               <Link
-                to="/profile/clement-maulidi"
+                to="/profile"
                 className="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-indigo-700 transition duration-300"
               >
                 View Full Profile

@@ -1,4 +1,3 @@
-import React from "react";
 import { FiMapPin, FiPhone, FiMail, FiUser, FiSend } from 'react-icons/fi';
 
 const ContactUs = () => {
