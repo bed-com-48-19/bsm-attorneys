@@ -29,7 +29,7 @@ const HeroSection = () => {
   return (
     <>
       {/*=============================== hero section ================*/}
-      <section className="hero__section pt-12 2xl:h-96">
+      <section className="hero__section pt-24 2xl:h-96"> {/* Increased top padding */}
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-12 items-center justify-between">
             <div className="lg:w-1/2">
@@ -203,15 +203,17 @@ const HeroSection = () => {
                   highly recommend their services to anyone seeking reliable
                   legal counsel
                 </p>
-                <div className="flex items-center mb-4">
+                <div className="flex items-center">
                   <img
                     src={avatar}
-                    alt="John Doe Avatar"
-                    className="w-12 h-12 rounded-full object-cover mr-4"
+                    alt="Client Avatar"
+                    className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <p className="font-bold text-headingColor">John Doe</p>
-                    <p className="text-sm text-gray-500">CEO, Company XYZ</p>
+                    <h3 className="text-xl font-bold text-headingColor">
+                      John Doe
+                    </h3>
+                    <p className="text-textColor">CEO, ABC Company</p>
                   </div>
                 </div>
               </div>
@@ -221,22 +223,24 @@ const HeroSection = () => {
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <div className="p-6">
                 <p className="text-lg text-textColor mb-4">
-                  Working with BSM Attorneys has been an absolute game-changer
-                  for our company. Their expertise and dedication have not only
-                  resolved our legal challenges swiftly but also empowered us to
-                  navigate complex regulatory landscapes with confidence. I
-                  highly recommend their services to anyone seeking reliable
-                  legal counsel
+                  I am incredibly impressed with the level of professionalism
+                  and commitment displayed by BSM Attorneys. Their meticulous
+                  approach to our case, coupled with their clear and
+                  transparent communication, made the entire process seamless
+                  and stress-free. It's a pleasure to work with such a dedicated
+                  team.
                 </p>
-                <div className="flex items-center mb-4">
+                <div className="flex items-center">
                   <img
                     src={avatar}
-                    alt="Jane Smith Avatar"
-                    className="w-12 h-12 rounded-full object-cover mr-4"
+                    alt="Client Avatar"
+                    className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <p className="font-bold text-headingColor">Jane Smith</p>
-                    <p className="text-sm text-gray-500">Director, ABC Inc.</p>
+                    <h3 className="text-xl font-bold text-headingColor">
+                      Jane Smith
+                    </h3>
+                    <p className="text-textColor">Entrepreneur</p>
                   </div>
                 </div>
               </div>
@@ -244,7 +248,6 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      {/* Testimonials Section End */}
     </>
   );
 };
