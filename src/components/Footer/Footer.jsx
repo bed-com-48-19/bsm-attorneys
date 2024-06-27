@@ -5,19 +5,19 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const socialLinks = [
   {
     path: "https://www.facebook.com/bsm-attorneys",
-    icon: <FaFacebook className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
+    icon: <FaFacebook className="w-6 h-6 text-blue-800" />,
   },
   {
     path: "https://twitter.com/bsm-attorneys",
-    icon: <FaTwitter className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
+    icon: <FaTwitter className="w-6 h-6 text-blue-400" />,
   },
   {
     path: "https://www.linkedin.com/company/bsm-attorneys",
-    icon: <RiLinkedinBoxFill className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
+    icon: <RiLinkedinBoxFill className="w-6 h-6 text-blue-600" />,
   },
   {
     path: "https://www.instagram.com/bsm-attorneys",
-    icon: <FaInstagram className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
+    icon: <FaInstagram className="w-6 h-6 text-pink-600" />,
   },
 ];
 
@@ -71,7 +71,7 @@ const Footer = () => {
                   href={link.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primaryColor transition-colors duration-300"
+                  className="text-gray-600"
                 >
                   {link.icon}
                 </a>
