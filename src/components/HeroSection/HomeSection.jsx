@@ -5,7 +5,10 @@ import Img03 from "../../assets/images/law2.jpg";
 import avatar from "../../assets/images/avatar.png";
 import ServiceModal from "../Service/ServiceModal";
 import { Link } from "react-router-dom";
-import { FiUser, FiBriefcase, FiArrowRight } from 'react-icons/fi';
+import faqImg from "../../assets/images/img2.jpg";
+import { FiUser, FiBriefcase, FiArrowRight } from "react-icons/fi";
+import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import FaqList from "../Faq/FaqList";
 
 const HeroSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -120,8 +123,8 @@ const HeroSection = () => {
 
       {/*=============================== Team section start ================*/}
       <section id="contact" className="team-section py-12 bg-gray-50">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center">
+      <div className="container mx-auto justify-center items-center">
+        <h2 className="text-3xl heading font-semibold text-gray-800 mb-8 text-center">
           Our Team
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -145,6 +148,17 @@ const HeroSection = () => {
               >
                 View Full Profile <FiArrowRight className="ml-2" />
               </Link>
+              <div className="mt-4 flex space-x-4">
+                <a href="https://www.linkedin.com" className="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                  <FaLinkedin size={24} />
+                </a>
+                <a href="https://www.twitter.com" className="text-blue-600 hover:text-blue-800 transition duration-300">
+                  <FaTwitter size={24} />
+                </a>
+                <a href="https://www.facebook.com" className="text-blue-800 hover:text-blue-900 transition duration-300">
+                  <FaFacebook size={24} />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -168,6 +182,17 @@ const HeroSection = () => {
               >
                 View Full Profile <FiArrowRight className="ml-2" />
               </Link>
+              <div className="mt-4 flex space-x-4">
+                <a href="https://www.linkedin.com" className="text-indigo-600 hover:text-indigo-800 transition duration-300">
+                  <FaLinkedin size={24} />
+                </a>
+                <a href="https://www.twitter.com" className="text-blue-600 hover:text-blue-800 transition duration-300">
+                  <FaTwitter size={24} />
+                </a>
+                <a href="https://www.facebook.com" className="text-blue-800 hover:text-blue-900 transition duration-300">
+                  <FaFacebook size={24} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -175,6 +200,23 @@ const HeroSection = () => {
     </section>
 
       {/*=============================== Team section end ================*/}
+
+      {/**____________________FAQs Section end _____________ */}
+      <section>
+        <div className="container">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img src={faqImg} />
+            </div>
+
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">FAQs</h2>
+              <FaqList />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/**____________________FAQs Section end _____________ */}
 
       {/* Testimonials Section (Example of additional content) */}
       <section className="py-16 bg-gray-100">

@@ -4,19 +4,19 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const socialLinks = [
   {
-    path: "https://www.facebook.com/yourlawfirm",
+    path: "https://www.facebook.com/bsm-attorneys",
     icon: <FaFacebook className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
   },
   {
-    path: "https://twitter.com/yourlawfirm",
+    path: "https://twitter.com/bsm-attorneys",
     icon: <FaTwitter className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
   },
   {
-    path: "https://www.linkedin.com/company/yourlawfirm",
+    path: "https://www.linkedin.com/company/bsm-attorneys",
     icon: <RiLinkedinBoxFill className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
   },
   {
-    path: "https://www.instagram.com/yourlawfirm",
+    path: "https://www.instagram.com/bsm-attorneys",
     icon: <FaInstagram className="w-6 h-6 text-gray-600 hover:text-primaryColor transition-colors duration-300" />,
   },
 ];
@@ -25,7 +25,7 @@ const quickLinks = [
   {
     title: "Quick Links",
     links: [
-      { path: "/home", display: "Home" },
+      { path: "/", display: "Home" },
       { path: "/about", display: "About Us" },
       { path: "/services", display: "Services" },
       { path: "/profile", display: "Team" },
@@ -39,7 +39,7 @@ const quickLinks = [
     links: [
       { path: "/profile", display: "Book Appointment" },
       { path: "/contact", display: "Search Location" },
-      { path: "/terms", display: "Terms of Service" },
+      { path: "/services", display: "Terms of Service" },
     ],
   },
   {
