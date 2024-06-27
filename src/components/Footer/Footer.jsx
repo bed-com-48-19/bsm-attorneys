@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import Logo from '../../assets/images/logo.png'; // Replace with the actual path to your logo
 
 const socialLinks = [
   {
@@ -64,7 +65,7 @@ const Footer = () => {
             <p className="text-sm text-gray-600 mb-4">
               Copyright @ {year} developed By Fumuwee All rights Reserved.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-4">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
@@ -77,6 +78,7 @@ const Footer = () => {
                 </a>
               ))}
             </div>
+            <img src={Logo} alt="Project Logo" className="w-32 h-auto" />
           </div>
 
           {/* Quick Links Sections */}
