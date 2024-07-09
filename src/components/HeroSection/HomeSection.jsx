@@ -2,6 +2,7 @@ import { useState } from "react";
 import services from "../../assets/data/service";
 import heroImg01 from "../../assets/images/hammer.jpg";
 import Img03 from "../../assets/images/law2.jpg";
+import ManagingPartnerImage from "../../assets/images/img4.jpg";
 import avatar from "../../assets/images/avatar.png";
 import ServiceModal from "../Service/ServiceModal";
 import { Link } from "react-router-dom";
@@ -132,7 +133,7 @@ const HeroSection = () => {
           <div className="team-member bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6">
             <div className="w-full md:w-1/3 h-[225px] md:h-full flex-shrink-0">
               <img
-                src={Img03}
+                src={ManagingPartnerImage}
                 alt="Mr. Bonwell Mlenga"
                 className="w-full h-full object-contain"
               />
